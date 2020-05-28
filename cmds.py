@@ -81,7 +81,7 @@ class MyClient(discord.Client):
             await message.channel.send('''```
 Hey, here's what I can do:
     -roll ~ Dice roll game if you are feeling lucky
-    -animerec ~ Want a new anime to watch? Try this to find new show. (if you would like to add an anime message @Nezuko Chan
+    -animerec ~ Want a new anime to watch? Try this to find new show. (if you would like to add an anime, message Spoopy#4645 on Discord) 
     -coinflip ~ Does what is says; flips a coin
     -twitch ~ Displays twitch channel
     
