@@ -27,6 +27,7 @@ def int_keys(users):
 async def on_ready():
     print("Bot Ready")
     print("---------")
+    await client.change_presence(activity=discord.Game(name=' "-" Prefix'))
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -92,3 +93,4 @@ If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
 client = MyClient()
 client.run("NjgwMTk2MjUzNjM5NzcwMTMy.XlA7hw.0sM_0J8oSacPBPjuFodRV3uMUDs")
+
