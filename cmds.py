@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import random
-import asyncio
+
 
 
 client = commands.Bot(command_prefix="-")
@@ -51,7 +51,7 @@ class MyClient(discord.Client):
 
             try:
                 guess = await self.wait_for('message', check=is_correct, timeout=5.0)
-            except asyncio.TimeoutError:
+            except:
                 return await message.channel.send('```Sorry, you took too long it was {}.```'.format(answer))
 
             if int(guess.content) == answer:
