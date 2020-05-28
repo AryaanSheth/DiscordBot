@@ -87,7 +87,8 @@ Hey, here's what I can do:
     -roll ~ Dice roll game if you are feeling lucky
     -animerec ~ Want a new anime to watch? Try this to find new show. (if you would like to add an anime, message Spoopy#4645 on Discord) 
     -coinflip ~ Does what is says; flips a coin
-    -Socials ~ Displays twitch channel
+    -socials ~ Displays twitch channel
+    -sus ~ Checks how sus you are
     
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
