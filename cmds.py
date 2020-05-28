@@ -1,8 +1,7 @@
-import discord
-from discord.ext import commands
 import random
 
-
+import discord
+from discord.ext import commands
 
 client = commands.Bot(command_prefix="-")
 
@@ -35,6 +34,7 @@ class MyClient(discord.Client):
         print(self.user.name)
         print(self.user.id)
         print('------')
+        await client.change_presence(activity=discord.Game(name=' "-" Prefix'))
 
     async def on_message(self, message):
         # we do not want the bot to reply to itself
