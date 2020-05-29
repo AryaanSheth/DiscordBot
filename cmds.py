@@ -14,7 +14,8 @@ anime_list = ["Aquarion Evol", "Bakemonogatari", "C: The Money of Soul and Possi
               "No Game No Life", "Radiant", "Dr.Stone", "Demon Slayer",
               "Violet Evergarden", "HunterxHunter", "Seven Deadly Sins", "Gurren Lagann", "Re:Zero", "One-Punch Man",
               "Kaguya-Sama: Love is War", "Assassination Classroom", "Promised Neverland",
-              "Black Clover", "Kakegurui – Compulsive Gambler", "Black Butler"]
+              "Black Clover", "Kakegurui – Compulsive Gambler",
+              "Black Butler, Glepnir, A Certain Scientific Railgun, Sailor Moon, Magi, Beyond the Boundry"]
 
 def int_keys(users):
     new_users = {}
