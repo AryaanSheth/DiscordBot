@@ -42,7 +42,7 @@ class MyClient(discord.Client):
         if message.author.id == self.user.id:
             return
 
-        # roll Game
+            # roll Game
         if message.content.startswith('-roll'):
             await message.channel.send('```Guess a number between 1 and 6.```')
 
@@ -61,13 +61,13 @@ class MyClient(discord.Client):
             else:
                 await message.channel.send('```Oops. It is actually {}.```'.format(answer))
 
-        # Anime Recommendation
+            # Anime Recommendation
         if message.content.startswith('-animerec'):
             rec = random.randint(1, len(anime_list)-1)
             frec = anime_list[rec]
             await message.channel.send('```I recommend the anime {}```'.format(frec))
 
-        # coin flip
+            # coin flip
         if message.content.startswith('-coinflip'):
             channel = message.channel
             face = random.randint(1, 2)
@@ -77,13 +77,21 @@ class MyClient(discord.Client):
             elif face == 2:
                 await message.channel.send("```The Coin Flipped Tails```")
 
+            # sus Meter
         if message.content.startswith('-sus'):
             sus_lvl = random.randint(1, 100)
             await message.channel.send("``` You Are {0}% sus! ```".format(sus_lvl))
 
+            # send my Socials
+        if message.content.startswith('-socials'):
+            channel = message.channel
+            await message.channel.send("```My Twitch is https://www.twitch.tv/spretzelz"
+                                       "My Discord is Spoopy#4645```")
+
         # Help Command
         if message.content.startswith('-help'):
             await message.channel.send('''```
+            
 Hey, here's what I can do:
     -roll ~ Dice roll game if you are feeling lucky
     -animerec ~ Want a new anime to watch? Try this to find new show. (if you would like to add an anime, message Spoopy#4645 on Discord) 
@@ -93,10 +101,6 @@ Hey, here's what I can do:
     
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
-        if message.content.startswith('-socials'):
-            channel = message.channel
-            await message.channel.send("```My Twitch is https://www.twitch.tv/spretzelz"
-                                       "My Discord is Spoopy#4645```")
 
 client = MyClient()
 client.run("NjgwMTk2MjUzNjM5NzcwMTMy.XlA7hw.0sM_0J8oSacPBPjuFodRV3uMUDs")
