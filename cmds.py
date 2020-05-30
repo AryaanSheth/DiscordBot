@@ -103,7 +103,7 @@ class MyClient(discord.Client):
         if message.content.startswith('-coal'):
             clist = len(coal)
             cnum = random.randint(0, clist)
-            await message.channel.send("```{0}```").format(coal[cnum])
+            await message.channel.send("```{0}```".format(coal[cnum]))
 
         # Help Command
         if message.content.startswith('-help'):
