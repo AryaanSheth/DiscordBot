@@ -17,6 +17,18 @@ anime_list = ["Aquarion Evol", "Bakemonogatari", "C: The Money of Soul and Possi
               "Black Clover", "Kakegurui – Compulsive Gambler",
               "Black Butler, Glepnir, A Certain Scientific Railgun, Sailor Moon, Magi, Beyond the Boundry"]
 
+coal = ['Oh, no, my young Jedi', 'Young fool. ...', "There is a great disturbance in the Force",
+        "Your feeble skills are no match for the power of the dark side!", 'Once more the Sith will rule the galaxy!',
+        'That is UNFORTUNATE...',
+        'Do not fear their feeble attack, my faithful. Nothing will stop the return of the sith!',
+        'As once I fell, so falls the last skywalker.',
+        'The attempt on my life has left me scarred and deformed, but I assure you, my resolve has never been stronger!',
+        'The dark side of the force is a pathway to many abilities some consider to be unnatural',
+        'It is your end, my little green friend.',
+        'Now witness the firepower of this fully armed and operational battle station',
+        'It is of no concern. Soon the rebellion will be crushed and young Skywalker will be one of us.',
+        'Now you will experience the full power of the dark side']
+
 def int_keys(users):
     new_users = {}
     for key, value in users.items():
@@ -88,6 +100,11 @@ class MyClient(discord.Client):
             await message.channel.send(
                 "```My Twitch is https://www.twitch.tv/spretzelz \nMy Discord is Spoopy#4645```")
 
+        if message.content.startswith('-coal'):
+            clist = len(coal)
+            cnum = random.randint(0, clist)
+            await message.channel.send(coal[cnum])
+
         # Help Command
         if message.content.startswith('-help'):
             await message.channel.send('''```
@@ -98,6 +115,7 @@ Hey, here's what I can do:
     -coinflip ~ Does what is says; flips a coin
     -socials ~ Displays twitch channel
     -sus ~ Checks how sus you are
+    -coal ~ Says a Coal quote
     
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
