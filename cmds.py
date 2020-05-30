@@ -17,7 +17,7 @@ anime_list = ["Aquarion Evol", "Bakemonogatari", "C: The Money of Soul and Possi
               "Black Clover", "Kakegurui – Compulsive Gambler",
               "Black Butler, Glepnir, A Certain Scientific Railgun, Sailor Moon, Magi, Beyond the Boundry"]
 
-coal = ['Oh, no, my young Jedi', 'Young fool. ...', "There is a great disturbance in the Force",
+coal = ['Young fool. ...', "There is a great disturbance in the Force",
         "Your feeble skills are no match for the power of the dark side!", 'Once more the Sith will rule the galaxy!',
         'That is UNFORTUNATE...',
         'Do not fear their feeble attack, my faithful. Nothing will stop the return of the sith!',
@@ -103,7 +103,7 @@ class MyClient(discord.Client):
         if message.content.startswith('-coal'):
             clist = len(coal)
             cnum = random.randint(0, clist)
-            await message.channel.send(coal[cnum])
+            await message.channel.send("```{0}```").format(coal[cnum])
 
         # Help Command
         if message.content.startswith('-help'):
