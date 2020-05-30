@@ -98,16 +98,16 @@ class MyClient(discord.Client):
         if message.content.startswith('-socials'):
             channel = message.channel
             await message.channel.send(
-                "```My Twitch is https://www.twitch.tv/spretzelz \nMy Discord is Spoopy#4645```")
+                "```fix My Twitch is https://www.twitch.tv/spretzelz \nMy Discord is Spoopy#4645```")
 
         if message.content.startswith('-coal'):
             clist = len(coal)
             cnum = random.randint(0, clist)
-            await message.channel.send("```{0}```".format(coal[cnum]))
+            await message.channel.send("```fix {0}```".format(coal[cnum]))
 
         # Help Command
         if message.content.startswith('-help'):
-            await message.channel.send('''```
+            await message.channel.send('''```fix
             
 Hey, here's what I can do:
     -roll ~ Dice roll game if you are feeling lucky
