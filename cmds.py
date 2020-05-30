@@ -86,7 +86,7 @@ class MyClient(discord.Client):
         if message.content.startswith('-socials'):
             channel = message.channel
             await message.channel.send(
-                "```My Twitch is https://www.twitch.tv/spretzelz \n My Discord is Spoopy#4645```")
+                "```My Twitch is https://www.twitch.tv/spretzelz \nMy Discord is Spoopy#4645```")
 
         # Help Command
         if message.content.startswith('-help'):
