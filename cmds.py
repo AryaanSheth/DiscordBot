@@ -115,7 +115,7 @@ Hey, here's what I can do:
     -coinflip ~ Does what is says; flips a coin
     -socials ~ Displays twitch channel
     -sus ~ Checks how sus you are
-    -coal ~ Says a Coal quote
+    -coal ~ Says a Coal quote.
     
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
