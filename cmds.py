@@ -92,23 +92,22 @@ class MyClient(discord.Client):
             # sus Meter
         if message.content.startswith('-sus'):
             sus_lvl = random.randint(1, 100)
-            await message.channel.send("``` You Are {0}% sus! ```".format(sus_lvl))
+            await message.channel.send("```You Are {0}% sus!```".format(sus_lvl))
 
             # send my Socials
         if message.content.startswith('-socials'):
             channel = message.channel
             await message.channel.send(
-                "```fix My Twitch is https://www.twitch.tv/spretzelz \nMy Discord is Spoopy#4645```")
+                "```My Twitch is https://www.twitch.tv/spretzelz \nMy Discord is Spoopy#4645```")
 
         if message.content.startswith('-coal'):
             clist = len(coal)
             cnum = random.randint(0, clist)
-            await message.channel.send("```fix {0}```".format(coal[cnum]))
+            await message.channel.send("```{0}```".format(coal[cnum]))
 
         # Help Command
         if message.content.startswith('-help'):
-            await message.channel.send('''```fix
-            
+            await message.channel.send('''```
 Hey, here's what I can do:
     -roll ~ Dice roll game if you are feeling lucky
     -animerec ~ Want a new anime to watch? Try this to find new show. (if you would like to add an anime, message Spoopy#4645 on Discord) 
