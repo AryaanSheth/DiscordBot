@@ -29,6 +29,11 @@ coal = ['Young fool. ...', "There is a great disturbance in the Force",
         'It is of no concern. Soon the rebellion will be crushed and young Skywalker will be one of us.',
         'Now you will experience the full power of the dark side']
 
+fem = ['@356248821464039425', "@398249565490511877", '@247866274464399373', '@215937101970014219', '@247865271480483840'
+                                                                                                   '@214843043897933825',
+       '@431524570131070988', '@308703400323842048', '@374703513315442691', '@435453445403574293',
+       '@267792469113044994']
+
 def int_keys(users):
     new_users = {}
     for key, value in users.items():
@@ -100,8 +105,9 @@ class MyClient(discord.Client):
             await message.channel.send("```{0}```".format(coal[cnum]))
 
         if message.content.startswith('-femboy'):
-            id = '<@356248821464039425>'
-            await message.channel.send(id + " is a femboy")
+            flist = len(fem)
+            fnum = random.randint(0, flist)
+            await message.channel.send("{0} is a femboy!!!!!".format(fem[fnum]))
 
         # Help Command
         if message.content.startswith('-help'):
