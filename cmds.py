@@ -100,7 +100,7 @@ class MyClient(discord.Client):
             await message.channel.send("```{0}```".format(coal[cnum]))
 
         if message.content.startswith('-femboy'):
-            id = '<@689590043991605307>'
+            id = '<@356248821464039425>'
             await message.channel.send(id + " is a femboy")
 
         # Help Command
