@@ -117,6 +117,6 @@ Hey, here's what I can do:
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
 
-
+client = MyClient()
 client.run("NjgwMTk2MjUzNjM5NzcwMTMy.XlA7hw.0sM_0J8oSacPBPjuFodRV3uMUDs")
 
