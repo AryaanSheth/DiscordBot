@@ -35,12 +35,6 @@ def int_keys(users):
         new_users[int(key)] = value
     return new_users
 
-@client.event
-async def on_ready():
-    print("Bot Ready")
-    print("---------")
-    await client.change_presence(activity=discord.Game(name=' "-" Prefix'))
-
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged in as')
@@ -105,6 +99,9 @@ class MyClient(discord.Client):
             cnum = random.randint(0, clist)
             await message.channel.send("```{0}```".format(coal[cnum]))
 
+        if message.content.startswith('-femboy'):
+            await message.channel.send("@Inactive101#3489 is a femboy")
+
         # Help Command
         if message.content.startswith('-help'):
             await message.channel.send('''```
@@ -119,6 +116,5 @@ Hey, here's what I can do:
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
 
-client = MyClient()
 client.run("NjgwMTk2MjUzNjM5NzcwMTMy.XlA7hw.0sM_0J8oSacPBPjuFodRV3uMUDs")
 
