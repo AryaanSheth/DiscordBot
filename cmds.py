@@ -107,7 +107,7 @@ class MyClient(discord.Client):
         if message.content.startswith('-femboy'):
             flist = len(fem)
             fnum = random.randint(0, flist)
-            await message.channel.send("{0} is a femboy!!!!!".format(fem[fnum]))
+            await message.channel.send("<{0}> is a femboy!!!!!".format(fem[fnum]))
 
         # Help Command
         if message.content.startswith('-help'):
