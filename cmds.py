@@ -24,7 +24,7 @@ coal = ['Young fool. ...', "There is a great disturbance in the Force",
         'As once I fell, so falls the last skywalker.',
         'The attempt on my life has left me scarred and deformed, but I assure you, my resolve has never been stronger!',
         'The dark side of the force is a pathway to many abilities some consider to be unnatural',
-        'It is your end, my little green friend.',
+        'It is your end, my little green friend',
         'Now witness the firepower of this fully armed and operational battle station',
         'It is of no concern. Soon the rebellion will be crushed and young Skywalker will be one of us.',
         'Now you will experience the full power of the dark side']
