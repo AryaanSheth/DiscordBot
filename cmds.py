@@ -100,7 +100,8 @@ class MyClient(discord.Client):
             await message.channel.send("```{0}```".format(coal[cnum]))
 
         if message.content.startswith('-femboy'):
-            await message.channel.send("@Inactive101#3489 is a femboy")
+            id = '<@689590043991605307>'
+            await message.channel.send(id + " is a femboy")
 
         # Help Command
         if message.content.startswith('-help'):
@@ -116,7 +117,6 @@ Hey, here's what I can do:
 If you have anymore questions feel free to ask an Admin or Moderators ```''')
 
 
-client = MyClient()
 
 client.run("NjgwMTk2MjUzNjM5NzcwMTMy.XlA7hw.0sM_0J8oSacPBPjuFodRV3uMUDs")
 
