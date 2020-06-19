@@ -34,6 +34,8 @@ fem = ['@356248821464039425', "@398249565490511877", '@247866274464399373', '@21
        '@431524570131070988', '@308703400323842048', '@374703513315442691', '@435453445403574293',
        '@267792469113044994']
 
+pokemon = "https://www.mypokecard.com/en/Gallery/my/galery/J4rsov82avJp.jpg"
+
 def int_keys(users):
     new_users = {}
     for key, value in users.items():
@@ -108,6 +110,9 @@ class MyClient(discord.Client):
             flist = len(fem)
             fnum = random.randint(0, flist)
             await message.channel.send("<{0}> is a femboy!!!!!".format(fem[fnum]))
+
+        if message.content.startswith('-pokemon'):
+            await message.channel.send(pokemon)
 
         # Help Command
         if message.content.startswith('-help'):
