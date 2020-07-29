@@ -29,11 +29,6 @@ coal = ['Young fool. ...', "There is a great disturbance in the Force",
         'It is of no concern. Soon the rebellion will be crushed and young Skywalker will be one of us.',
         'Now you will experience the full power of the dark side']
 
-fem = ['@356248821464039425', "@398249565490511877", '@247866274464399373', '@215937101970014219',
-       '@247865271480483840', '@214843043897933825',
-       '@431524570131070988', '@308703400323842048', '@374703513315442691', '@435453445403574293',
-       '@267792469113044994']
-
 pokemon = "https://www.mypokecard.com/en/Gallery/my/galery/J4rsov82avJp.jpg"
 
 def int_keys(users):
@@ -105,11 +100,6 @@ class MyClient(discord.Client):
             clist = len(coal)
             cnum = random.randint(0, clist)
             await message.channel.send("```{0}```".format(coal[cnum]))
-
-        if message.content.startswith('-femboy'):
-            flist = len(fem)
-            fnum = random.randint(0, flist)
-            await message.channel.send("<{0}> is a femboy!!!!!".format(fem[fnum]))
 
         if message.content.startswith('-pokemon'):
             await message.channel.send(pokemon)
