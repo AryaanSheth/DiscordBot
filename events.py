@@ -2,7 +2,7 @@ import discord
 import json
 from discord.ext import commands
 
-token = "NjgwMTk2MjUzNjM5NzcwMTMy.XlA7hw.0sM_0J8oSacPBPjuFodRV3uMUDs"
+token = DISCORD TOKEN
 client = commands.Bot(command_prefix="-")
 bot = commands.Bot(command_prefix='-')
 
