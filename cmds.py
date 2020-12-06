@@ -1,5 +1,4 @@
 import random
-
 import discord
 from discord.ext import commands
 
@@ -30,6 +29,7 @@ coal = ['Young fool. ...', "There is a great disturbance in the Force",
         'Now you will experience the full power of the dark side']
 
 pokemon = "https://www.mypokecard.com/en/Gallery/my/galery/J4rsov82avJp.jpg"
+
 
 def int_keys(users):
     new_users = {}
